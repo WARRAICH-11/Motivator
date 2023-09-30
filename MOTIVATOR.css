@@ -26,9 +26,8 @@ body {
 .song-list {
     list-style: none;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Boxes will have a minimum width of 150px and expand to fill the available space */
-    gap: 20px; /* Gap between boxes */
+    display: list;
+
 }
 
 li {
