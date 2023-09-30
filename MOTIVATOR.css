@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Copperplate, fantasy;
+
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.playlist {
+    margin: 30px 0;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Boxes will have a minimum width of 150px and expand to fill the available space */
+    gap: 20px; /* Gap between boxes */
+}
+
+li {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #ff5733; /* Set text color to vibrant orange */
+	font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Add letter spacing for a stylish look */
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+li:hover {
+    cursor: pointer;
+    transform: scale(1.5); /* Scale the list item on hover for a stylish effect */
+    color: #ff1f5a; /* Change text color to a different shade of pink */
+}
+
+/* Media Query for Tablets and Small Desktops */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+/* Media Query for Medium Desktops and Larger Screens */
+@media (min-width: 992px) {
+    .container {
+        max-width: 800px;
+    }
+}
