@@ -10,45 +10,42 @@ body {
     
 }
 
-  @keyframes changeBackground {
-	  
-            15% {
-                background-color: #73d7ff; /* Start color */
-            }
-            15% {
-                background-color: #8fdfff; /* Middle color */
-            }
-            30% {
-                background-color: #abe7ff; /* End color */
-            }
-			45%{
-                background-color: #e3f7ff; /* Start color */
-            }
-            60%{
-                background-color: #b3ecec; /* Middle color */
-            }
-            75% {
-                background-color: #89ecda; /* End color */
-            }
-			90% {
-                background-color: #43e8d8; /* Start color */
-            }
-            75% {
-                background-color: #40e0d0; /* Middle color */
-            }
-            60% {
-                background-color: #3bd6c6; /* End color */
-            }
-			45%{
-                background-color: #e3f7ff; /* Start color */
-            }
-            30%{
-                background-color: #abe7ff; /* Middle color */
-            }
-            15% {
-                background-color: #8fdfff; /* End color */
-            }
-        }
+@keyframes changeBackground {
+    0% {
+        background-color: #b7e1cd; /* Light Green */
+    }
+    10% {
+        background-color: #f33131; /* Vibrant Red */
+    }
+    20% {
+        background-color: #96ffb5; /* Light Greenish Blue */
+    }
+    30% {
+        background-color: #d0ebf9; /* Light Blue */
+    }
+    40% {
+        background-color: #f6546a; /* Light Red */
+    }
+    50% {
+        background-color: #6cafb4; /* Light Blue-Green */
+    }
+    60% {
+        background-color: #ff7f50; /* Coral */
+    }
+    70% {
+        background-color: #ffa231; /* Pastel Orange */
+    }
+    80% {
+        background-color: #ff9800; /* Bright Orange */
+    }
+    90% {
+        background-color: #ffeb3b; /* Bright Yellow */
+    }
+    100% {
+        background-color: #b7e1cd; /* Light Green */
+    }
+}
+
 		
 .container1 {
     display: flex;
