@@ -279,14 +279,14 @@ li:hover {
 /* Media Query for Small Screens */
 @media (max-width: 767px) {
     .header h2 {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .nav-links h1 {
         margin-right: 10px;
         display: grid;
         grid-template-columns: auto auto;
-		font-size: 15px;
+		font-size: 13px;
     }
 
     .discription {
