@@ -2,13 +2,133 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 200vh;
     margin: 20px;
-   animation: changeBackground 10s infinite;
-    font-family: Copperplate, fantasy;
+   animation: changeBackground 15s infinite;
+    font-family: Garamond, serif;
 	 color: red;
     
 }
+/* Style for the solid header */
+.header {
+     background: linear-gradient(to left , black , #808080); 
+    color: grey;
+    padding: 15px 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.9s ease; /* Apply transition to all properties for smooth effect */
+}
+/* Add the typewriting effect to the .discription class */
+/* Add the infinite burst effect to the .discription class */
+.discription {
+    color: #fff;
+    padding: 1px;
+    text-align: left;
+    font-size: 25px;
+    margin: 10px;
+    position: center;
+    font-family: "Courier New", Courier, monospace;
+    opacity: 0; /* Start with 0 opacity (invisible) */
+    animation: burst 7s infinite; /* Animation duration and iteration count */
+}
+
+/* Define the burst animation */
+@keyframes burst {
+    0% {
+        opacity: 1; /* Fully visible at the start */
+    }
+    50% {
+        opacity: 0; /* Invisible at the middle of the animation */
+    }
+    100% {
+        opacity: 1; /* Fully visible again at the end */
+    }
+}
+
+
+
+/* Styles for the minimized header */
+.header.minimized {
+    padding: 1px; /* Adjust padding for minimized header */
+	font-size : 10px;
+	
+}
+
+/* Styles for the minimized logo */
+.logo.minimized {
+    width: 00px; /* Adjust width for minimized logo */
+    height: 00px; /* Adjust height for minimized logo */
+	opacity:0;
+}
+
+
+/* Style the logo container */
+.logo-container {
+    display: grid;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo-container img {
+    width: 250px; /* Set the width of the logo */
+    height: 320px; /* Set the height of the logo */
+    margin-right: 10px; /* Add margin for spacing between logo and title */
+	margin-left : 50px;
+}
+
+/* Style the title */
+.logo-container h2 {
+    margin: 10px;
+	margin-left : 50px;
+    font-size: 50px;
+}
+/* For modern browsers */
+.gradient-text {
+    background-image: linear-gradient(to left, #b7e1cd, #f33131, #96ffb5, black, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: glow-animation 9s ease-in-out infinite; /* Specify the animation duration, timing function, and iteration count */
+}
+
+/* Define the keyframes for the glow animation */
+@keyframes glow-animation {
+    0% {
+        background-size: 100% 100%; /* Start with fully visible gradient */
+    }
+    50% {
+        background-size: 200% 200%; /* Expand the gradient to create the pulsating effect */
+    }
+    100% {
+        background-size: 100% 150%; /* Return to the original size */
+    }
+}
+
+/* Style the navigation links */
+.nav-links h1 {
+    margin: 0 20px; /* Add margin between navigation links */
+	margin-right : 90px;
+	 display: inline; /* Display navigation links horizontally */
+}
+
+/* Style the hyperlinked headings in the header */
+.header h1 a {
+    text-decoration: none; /* Remove underline from hyperlinks */
+    color: #fff; /* Text color for the hyperlinks */
+    transition: color 0.6s ease; /* Smooth transition effect for text color */
+}
+
+/* Change text color on hover for hyperlinks in the header */
+.header h1 a:hover {
+    color: #ff5733; /* Change text color to a different shade on hover */
+}
+
 
 @keyframes changeBackground {
     0% {
@@ -45,7 +165,6 @@ body {
         background-color: #b7e1cd; /* Light Green */
     }
 }
-
 		
 .container1 {
     display: flex;
@@ -58,15 +177,14 @@ body {
 .container {
     text-align: center;
     padding: 50px;
-    border-radius: 20px; /* Border radius should not be part of background-image property */
-    box-shadow: 3PX 5PX 20px #40e0d0;
+    box-shadow: 3PX 5PX 20px black;
     max-width: 300px;
     width: 500%;
     background-image: url('BG.jpeg'); /* Replace 'BG.jpeg' with the actual path to your image file */
     background-size: cover; /* This ensures the image covers the whole background */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
     background-position: center; 
-	 margin: 30px 0;
+	 margin: 30px 10px;
 }
 
 
@@ -110,17 +228,73 @@ li:hover {
     color: #blue; /* Change text color to a different shade of pink */
 	
 }
+.button {
+    display: inline-block;
+    padding: 10px 25px; /* Set padding inside the button */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text inside the button */
+    text-decoration: none; /* Remove underline from the button text */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    background-color: #ff5733; /* Set background color */
+    color: #fff; /* Set text color */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+.button:hover {
+    background-color: orange; /* Change background color on hover */
+	box-shadow: 5PX 15PX 30px black;
+}
+/* Style the marquee container */
 
+/* Style the marquee text */
+.marquee-text marquee {
+    font-family: Garamond, serif; /* Set font family */
+}
 
+/* Style the email link inside the marquee */
+.marquee-text .email-link {
+    color: Red; /* Set link color */
+    text-decoration: none; /* Remove underline from the link */
+}
 
-/* Media Query for Tablets and Small Desktops */
-@media (min-width: 768px) {
-    .container {
-        max-width: 600px;
+/* Change link color on hover */
+.marquee-text .email-link:hover {
+    color: GREEN; /* Change link color on hover */
+}
+
+/* Default Styles */
+
+/* Media Query for Small Screens */
+@media (max-width: 767px) {
+    body {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .header h2 {
+        font-size: 20px; /* Adjust font size for header title on smaller screens */
+    }
+
+    .nav-links h1 {
+        margin-right: 10px; /* Adjust margin for navigation links on smaller screens */
+        display: grid; /* Display navigation links as a grid */
+        grid-template-columns: auto auto; /* Two columns with automatic width */
+    }
+
+    .button {
+        padding: 8px 20px; /* Adjust padding for buttons on smaller screens */
     }
 }
 
-/* Media Query for Medium Desktops and Larger Screens */
+/* Media Query for Medium Desktops */
+@media (min-width: 768px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+/* Media Query for Large Desktops and Larger Screens */
 @media (min-width: 992px) {
     .container {
         max-width: 800px;
