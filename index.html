@@ -7,68 +7,124 @@
     <title>DETOX</title>
     <link rel="stylesheet" href="MOTIVATOR.css">
     <!-- Add your logo here -->
-    <link rel="icon" href="LOGO.jpeg" type="image/png">
+    <link rel="icon" href="LOGO-removebg.png" type="image/png">
+	 <div class="header">
+        <div class="logo-container">
+            <img src="LOGO-removebg.png" alt="Logo" class="logo">
+            <div class="gradient-text"> <h2>D E T O X</h2> </div>
+        </div>
+		<div class="discription">
+    <p>DIGITAL </p>
+	<p>DETOXICATION 🌟</p>
+</div>
+
+        <div class="nav-links">
+            <h1><a href="#speeches">SPEECHES</a></h1>
+            <h1><a href="#tilawat">TILAWAT</a></h1>
+            <h1><a href="#podcast">PODCAST</a></h1>
+			<h1><a href="#NASHEED & NAAT">NASHEED & NAAT</a></h1>
+        </div>
+    </div>
 </head>
 
+
 <body>
+
+	
 <div class="container1">
 <div class="container">
+<audio id="clickSound">
+    <source src="KEY.mp3" type="audio/mpeg">
+</audio>
+
             <audio id="audioPlayer" controls>
                 <source src="Free your Mind with Two C’s of Life _ Motivational Session by Shaykh Atif Ahmed.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
-    <div class="container">
+       <div class="container" id="speeches">
         <h1>SPEECHES</h1>
         
         <ul class="song-list">
-            <li><button onclick="playSong('Free your Mind with Two C’s of Life _ Motivational Session by Shaykh Atif Ahmed.mp3')">FREE YOUR MIND WITH TWO C'S</button></li>
-            <li><button onclick="playSong('Gareebi Main Naam Paida Kar - The Ultimate Satisfaction _ Motivational Lecture by Shaykh Atif Ahmed.mp3')">GAREEBI MAIN NAAM</button></li>
-            <li><button onclick="playSong('Gumnami ka Safar - The Journey of Success _ Motivational Session by Shaykh Atif Ahmed.mp3')">GUMNAMI KA SAFAR</button></li>
-			<li><button onclick="playSong('Kamyabi Kay Usool - Roadmap to Success _ Motivational Session by Shaykh Atif Ahmed.mp3')">KAMYABI KE USOOL</button></li>
-			<li><button onclick="playSong('Khaak se Khaas Tak _ Motivational Video by Shaykh Atif Ahmed _ Al Midrar Institute.mp3')">KHAAK SE KHAAS TK</button></li>
-			<li><button onclick="playSong('Logon Ki Nafsiyaat - Psychologies of People _ Corporate Motivational Lecture by Shaykh Atif Ahmed.mp3')">LOGON KI NAFSIYAT</button></li>
-			<li><button onclick="playSong('Tangi Main Aagay Barhna _ Motivational Session by Shaykh Atif Ahmed _ Al-Midrar Institute.mp3')">TANGI MA AGAY BARHNA</button></li>
-			<li><button onclick="playSong('Tanhai - Loneliness of A Leader _ Motivational Session by Shaykh Atif Ahmed _ Al Midrar Institute.mp3')">TANHAI</button></li>
-			<li><button onclick="playSong('Zarray Sey Pahar Ka Safar - Path to Excellence _ Motivational Lecture by Shaykh Atif Ahmed.mp3')">ZARY SE PAHAR KA SAFR</button></li>
-			<li><button onclick="playSong('Manzil Destiny  Rastay __ Motivational Video __ Shaykh Atif Ahmed __ Al Midrar Institute.mp3')">Manzil</button></li>
-			<li><button onclick="playSong('Khudi (Self-Respect & Self-Esteem) _ Motivational Video by Shaykh Atif Ahmed _ Al Midrar Institute.mp3')">KHUDI</button></li>
-			<li><button onclick="playSong('Lamhay to Woh Hotay Hain _ Motivational Session _ Shaykh Atif Ahmed.mp3')">Lamhay</button></li>
-			<li><button onclick="playSong('Haar _ Shikast ka Darr _ Motivational Session by Shaykh Atif Ahmed _ Al-Midrar Institute.mp3')">SHIKAST KA DARR</button></li>
-			<li><button onclick="playSong('JEET KA SAFR.mp3')">JEET KA SAFR</button></li>
-			<li><button onclick="playSong('خوف __ Motivational Session __ Shaykh Atif Ahmed __ Al Midrar Institute.mp3')">FEAR</button></li>
+            <li><button class="button" onclick="playSoundAndSong('Free your Mind with Two C’s of Life _ Motivational Session by Shaykh Atif Ahmed.mp3')">FREE YOUR MIND WITH TWO C'S</button></li>
+            <li><button class="button" onclick="playSoundAndSong('Gareebi Main Naam Paida Kar - The Ultimate Satisfaction _ Motivational Lecture by Shaykh Atif Ahmed.mp3')">GAREEBI MAIN NAAM</button></li>
+            <li><button class="button" onclick="playSoundAndSong('Gumnami ka Safar - The Journey of Success _ Motivational Session by Shaykh Atif Ahmed.mp3')">GUMNAMI KA SAFAR</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Kamyabi Kay Usool - Roadmap to Success _ Motivational Session by Shaykh Atif Ahmed.mp3')">KAMYABI KE USOOL</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Khaak se Khaas Tak _ Motivational Video by Shaykh Atif Ahmed _ Al Midrar Institute.mp3')">KHAAK SE KHAAS TK</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Logon Ki Nafsiyaat - Psychologies of People _ Corporate Motivational Lecture by Shaykh Atif Ahmed.mp3')">LOGON KI NAFSIYAT</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Tangi Main Aagay Barhna _ Motivational Session by Shaykh Atif Ahmed _ Al-Midrar Institute.mp3')">TANGI MA AGAY BARHNA</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Tanhai - Loneliness of A Leader _ Motivational Session by Shaykh Atif Ahmed _ Al Midrar Institute.mp3')">TANHAI</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Zarray Sey Pahar Ka Safar - Path to Excellence _ Motivational Lecture by Shaykh Atif Ahmed.mp3')">ZARY SE PAHAR KA SAFR</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Manzil Destiny  Rastay __ Motivational Video __ Shaykh Atif Ahmed __ Al Midrar Institute.mp3')">Manzil</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Khudi (Self-Respect & Self-Esteem) _ Motivational Video by Shaykh Atif Ahmed _ Al Midrar Institute.mp3')">KHUDI</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Lamhay to Woh Hotay Hain _ Motivational Session _ Shaykh Atif Ahmed.mp3')">Lamhay</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Haar _ Shikast ka Darr _ Motivational Session by Shaykh Atif Ahmed _ Al-Midrar Institute.mp3')">SHIKAST KA DARR</button></li>
+			<li><button class="button" onclick="playSoundAndSong('JEET KA SAFR.mp3')">JEET KA SAFR</button></li>
+			<li><button class="button" onclick="playSoundAndSong('خوف __ Motivational Session __ Shaykh Atif Ahmed __ Al Midrar Institute.mp3')">FEAR</button></li>
         </ul>
     </div>
-	    <div class="container">
+   
+	   <div class="container" id="tilawat">
         <h1>TILAWAT</h1>
 
         <ul class="song-list">
-            <li><button onclick="playSong('Surah Al Kahf (Be Heaven) سورة الكهف.mp3')"> Surah Al Kahf </button></li>
-            <li><button onclick="playSong('Muhammad Siddiq Minshawi - Surah Rahman [1-68].mp3')"> Surah Rahman </button></li>
-            <li><button onclick="playSong('YASEEN.mp3')"> SURAH YASEEN </button></li>
-			<li><button onclick="playSong('سورة الذاريات برواية رويس الشيخ مشاري راشد العفاسيSurah Al-Thariyat Mishary Alafasy.mp3')"> Surah Al-Thariyat </button></li>
-			<li><button onclick="playSong('سورة طه ❤️ __ تلاوة هادئة بنبرة جميلة و خاشعة 😴 القارئ محمد ديبيروف _ Taha Suresi - Muhammad Dibirov.mp3')"> SURAH Taha </button></li>
-			
+            <li><button class="button" onclick="playSoundAndSong('Surah Al Kahf (Be Heaven) سورة الكهف.mp3')"> Surah Al Kahf </button></li>
+            <li><button class="button" onclick="playSoundAndSong('Muhammad Siddiq Minshawi - Surah Rahman [1-68].mp3')"> Surah Rahman </button></li>
+         <li> <button class="button" onclick="playSoundAndSong('YASEEN.mp3')"> SURAH YASEEN </button></li>
+			<li><button class="button" onclick="playSoundAndSong('سورة الذاريات برواية رويس الشيخ مشاري راشد العفاسيSurah Al-Thariyat Mishary Alafasy.mp3')"> Surah Al-Thariyat </button></li>
+			<li><button class="button" onclick="playSoundAndSong('سورة طه ❤️ __ تلاوة هادئة بنبرة جميلة و خاشعة 😴 القارئ محمد ديبيروف _ Taha Suresi - Muhammad Dibirov.mp3')"> SURAH Taha </button></li>
+			 <li><button class="button" onclick="playSoundAndSong('Surat Abasa.mp3')"> SURAH ABASA </button></li>
+			 <li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
+			 <li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
+			 <li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
+			 <li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
         </ul>
     </div>
 	
-	<div class="container">
+	 <div class="container" id="podcast">
         <h1>PODCAST</h1>
 
         <ul class="song-list">
           
-			<li><button onclick="playSong('Self Development from Quran __ Mohammad Ali.mp3')"> SELF DEVELOPMENT 💫 </button></li>
+			<li><button class="button" onclick="playSoundAndSong('Self Development.mp3')"> SELF DEVELOPMENT 💫 </button></li>
+			<li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
+			<li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
+			<li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
+			<li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
 
         </ul>
     </div>
 	
+	 <div class="container" id="NASHEED & NAAT">
+        <h1>NASHEED & NAAT</h1>
+
+        <ul class="song-list">
+          
+			<li><button class="button" onclick="playSoundAndSong('2022.mp3')">BADAR</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Nasheed Tabsirah.mp3')"> Tabsirah</button></li>
+			<li><button class="button" onclick="playSoundAndSong('[HD] 2021 .mp3')">MAWLA</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Aradat Qalbi.mp3')">ARADAT Qalbi</button></li>
+			<li><button class="button" onclick="playSoundAndSong('We Rise to The Sky .mp3')">RISE</button></li>
+			<li><button class="button" onclick="playSoundAndSong('2021.mp3')">QADR</button></li>
+			<li><button class="button" onclick="playSoundAndSong('YA RABBI.mp3')">YA RABBI</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Past & Presentl.mp3')">PAST & PRESENT</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Labbaik Al Quds Lana.mp3')">AL Quds </button></li>
+			<li><button class="button" onclick="playSoundAndSong('Jagha Ji.mp3')">JAGHA JI LAGANY</button></li>
+			<li><button class="button" onclick="playSoundAndSong('Faslon.mp3')"> FASLON KO TAKALUF </button></li>
+			<li><button class="button" onclick="playSoundAndSong('Sukoon Paya.mp3')"> SUKOON</button></li>
+
+        </ul>
+    </div>
+	
+	
+	</div>
     <script src="MOTIVATOR.js"></script>
 </body>
 
 <div class="footer">
         <div class="marquee-text">
             <marquee behavior="scroll" direction="left" scrollamount="5">
-               FOR SUGGESTIONS AND FEEDBACK ....   -<a href="mailto:hm2257153@gmail.com" class="email-link">hm2257153@gmail.com</a>
+               FOR SUGGESTIONS AND FEEDBACK 🌟-<a href="mailto:hm2257153@gmail.com" class="email-link">hm2257153@gmail.com</a>
             </marquee>
         </div>
     </div>
