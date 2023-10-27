@@ -75,6 +75,7 @@ audio {
     width: 00px; /* Adjust width for minimized logo */
     height: 00px; /* Adjust height for minimized logo */
 	opacity:0;
+	
 }
 
 
@@ -92,12 +93,14 @@ audio {
 	margin-left : 50px;
 }
 
-/* Style the title */
+/* Default styles */
 .logo-container h2 {
     margin: 10px;
-	margin-left : 50px;
+	margin-left: 50px;
     font-size: 50px;
 }
+
+
 /* For modern browsers */
 .gradient-text {
     background-image: linear-gradient(to left, #b7e1cd, #f33131, #96ffb5, black, white);
@@ -225,7 +228,7 @@ li {
     margin: 15px 0;
     font-size: 18px;
     color: #ff5733; /* Set text color to vibrant orange */
-	font-family: 'Roboto', sans-serif;
+	 font-family: 'Patrick Hand', cursive;
     font-weight: bold; /* Make the text bold */
     text-transform: uppercase; /* Convert text to uppercase */
     letter-spacing: 1px; /* Add letter spacing for a stylish look */
@@ -242,6 +245,7 @@ li:hover {
     display: inline-block;
     padding: 10px 25px; /* Set padding inside the button */
     font-size: 16px; /* Set font size */
+	 font-family: 'Patrick Hand', cursive;
     font-weight: bold; /* Make the text bold */
     text-align: center; /* Center the text inside the button */
     text-decoration: none; /* Remove underline from the button text */
@@ -278,7 +282,7 @@ li:hover {
 
 /* Media Query for Small Screens */
 @media (max-width: 767px) {
-
+	
 	.header.minimized .logo-container h2 {
         margin: 5px 0 0 20px;
         font-size: 6px;
@@ -332,6 +336,11 @@ li:hover {
 @media (min-width: 768px) {
     .container {
         max-width: 280px;
+    }
+	
+	.minimized-header .logo-container h2 {
+        margin: 5px 0 0 20px;
+        font-size: 30px;
     }
 }
 
