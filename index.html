@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>DETOX</title>
     <link rel="stylesheet" href="MOTIVATOR.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+	
     <!-- Add your logo here -->
     <link rel="icon" href="LOGO-removebg.png" type="image/png">
 	 <div class="header">
@@ -13,10 +16,7 @@
             <img src="LOGO-removebg.png" alt="Logo" class="logo">
             <div class="gradient-text"> <h2>D E T O X</h2> </div>
         </div>
-		<div class="discription">
-    <p>DIGITAL </p>
-	<p>DETOXICATION 🌟</p>
-</div>
+		
 
         <div class="nav-links">
             <h1><a href="#speeches">SPEECHES</a></h1>
@@ -41,12 +41,14 @@
                 <source src="Free your Mind with Two C’s of Life _ Motivational Session by Shaykh Atif Ahmed.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
+			<button id="downloadButton" class="button" onclick="downloadCurrentAudio()">Download</button>
         </div>
        <div class="container" id="speeches">
         <h1>SPEECHES</h1>
         
         <ul class="song-list">
             <li><button class="button" onclick="playSoundAndSong('Free your Mind with Two C’s of Life _ Motivational Session by Shaykh Atif Ahmed.mp3')">FREE YOUR MIND WITH TWO C'S</button></li>
+			<li><button class="button" onclick="playSoundAndSong('LIBERATION OF MIND.mp3')">LIBERATION OF MIND</button></li>
             <li><button class="button" onclick="playSoundAndSong('Gareebi Main Naam Paida Kar - The Ultimate Satisfaction _ Motivational Lecture by Shaykh Atif Ahmed.mp3')">GAREEBI MAIN NAAM</button></li>
             <li><button class="button" onclick="playSoundAndSong('Gumnami ka Safar - The Journey of Success _ Motivational Session by Shaykh Atif Ahmed.mp3')">GUMNAMI KA SAFAR</button></li>
 			<li><button class="button" onclick="playSoundAndSong('Kamyabi Kay Usool - Roadmap to Success _ Motivational Session by Shaykh Atif Ahmed.mp3')">KAMYABI KE USOOL</button></li>
@@ -63,7 +65,7 @@
 			<li><button class="button" onclick="playSoundAndSong('خوف __ Motivational Session __ Shaykh Atif Ahmed __ Al Midrar Institute.mp3')">FEAR</button></li>
         </ul>
     </div>
-   
+	
 	   <div class="container" id="tilawat">
         <h1>TILAWAT</h1>
 
@@ -86,8 +88,8 @@
 
         <ul class="song-list">
           
-			<li><button class="button" onclick="playSoundAndSong('Self Development from Quran __ Mohammad Ali.mp3')"> SELF DEVELOPMENT 💫 </button></li>
-			<li><button class="button" onclick="playSoundAndSong('Social media detox.mp3')"> SOCIAL MEDIA DETOX </button></li>
+			<li><button class="button" onclick="playSoundAndSong('Self Development.mp3')"> SELF DEVELOPMENT 💫 </button></li>
+			<li><button class="button" onclick="playSoundAndSong(' Social media detox.mp3')">SOCIAL MEDIA DETOX</button></li>
 			<li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
 			<li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
 			<li><button class="button" onclick="playSoundAndSong(' ')">    </button></li>
@@ -107,7 +109,6 @@
 			<li><button class="button" onclick="playSoundAndSong('We Rise to The Sky .mp3')">RISE</button></li>
 			<li><button class="button" onclick="playSoundAndSong('2021.mp3')">QADR</button></li>
 			<li><button class="button" onclick="playSoundAndSong('YA RABBI.mp3')">YA RABBI</button></li>
-			<li><button class="button" onclick="playSoundAndSong('Past & Presentl.mp3')">PAST & PRESENT</button></li>
 			<li><button class="button" onclick="playSoundAndSong('Labbaik Al Quds Lana.mp3')">AL Quds </button></li>
 			<li><button class="button" onclick="playSoundAndSong('Jagha Ji.mp3')">JAGHA JI LAGANY</button></li>
 			<li><button class="button" onclick="playSoundAndSong('Faslon.mp3')"> FASLON KO TAKALUF </button></li>
@@ -124,7 +125,7 @@
 <div class="footer">
         <div class="marquee-text">
             <marquee behavior="scroll" direction="left" scrollamount="5">
-               FOR SUGGESTIONS AND FEEDBACK 🌟-<a href="mailto:hm2257153@gmail.com" class="email-link">hm2257153@gmail.com</a>
+               FOR FEEDBACK 🌟-<a href="mailto:hm2257153@gmail.com" class="email-link">hm2257153@gmail.com</a>
             </marquee>
         </div>
     </div>
