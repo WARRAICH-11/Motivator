@@ -37,3 +37,13 @@ window.addEventListener('scroll', function() {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
+
+ function downloadCurrentAudio() {
+        var audioSource = document.getElementById('audioSource').src;
+        var link = document.createElement('a');
+        link.href = audioSource;
+        link.download = audioSource.split('/').pop(); // Extracts filename from URL
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
