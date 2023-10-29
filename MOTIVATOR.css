@@ -4,9 +4,10 @@ body {
     align-items: center;
     height: 200vh;
     margin: 20px;
-   animation: changeBackground 15s infinite;
+   animation:  glow-animation 9s ease-in-out infinite;
+    background-image: linear-gradient(to right,#808080,#807070,#806060,#805050,#804040,#803030,#802020,#801010);
     font-family: Garamond, serif;
-	 color: red;
+	 color: RED;
     
 }
 h4{
