@@ -40,30 +40,7 @@ audio {
 }
 /* Add the typewriting effect to the .discription class */
 /* Add the infinite burst effect to the .discription class */
-.discription {
-    color: #fff;
-    padding: 1px;
-    text-align: left;
-    font-size: 25px;
-    margin: 10px;
-    position: center;
-    font-family: "Courier New", Courier, monospace;
-    opacity: 0; /* Start with 0 opacity (invisible) */
-    animation: burst 7s infinite; /* Animation duration and iteration count */
-}
 
-/* Define the burst animation */
-@keyframes burst {
-    0% {
-        opacity: 1; /* Fully visible at the start */
-    }
-    50% {
-        opacity: 0; /* Invisible at the middle of the animation */
-    }
-    100% {
-        opacity: 1; /* Fully visible again at the end */
-    }
-}
 
 
 
@@ -147,41 +124,7 @@ audio {
 }
 
 
-@keyframes changeBackground {
-    0% {
-        background-color: #b7e1cd; /* Light Green */
-    }
-    10% {
-        background-color: #f33131; /* Vibrant Red */
-    }
-    20% {
-        background-color: #96ffb5; /* Light Greenish Blue */
-    }
-    30% {
-        background-color: #d0ebf9; /* Light Blue */
-    }
-    40% {
-        background-color: #f6546a; /* Light Red */
-    }
-    50% {
-        background-color: #6cafb4; /* Light Blue-Green */
-    }
-    60% {
-        background-color: #ff7f50; /* Coral */
-    }
-    70% {
-        background-color: #ffa231; /* Pastel Orange */
-    }
-    80% {
-        background-color: #ff9800; /* Bright Orange */
-    }
-    90% {
-        background-color: #ffeb3b; /* Bright Yellow */
-    }
-    100% {
-        background-color: #b7e1cd; /* Light Green */
-    }
-}
+
 		
 .container1 {
     display: flex;
@@ -302,40 +245,29 @@ li:hover {
         grid-template-columns: auto auto;
 		font-size: 7px;
     }
-
-    .discription {
-        font-size: 0PX;
-		opacity: 0;
-    }
-
     .song-list li {
         font-size: 10px;
     }
-
     .button {
         padding: 5px 18px;
 		font-size: 8px; 
     }
-
     .logo-container {
         margin: 5px;
     }
-
     .logo-container img {
         width: 50px; /* Adjust width for minimized logo in mobile view */
         height: auto;
         margin-right: 10px;
     }
 	.container {
-        max-width: 200px;
+        max-width: 160px;
     }
 	 audio {
-        width: 100%; /* Adjust width for smaller screens */
-        margin: 10px 0; /* Adjust margin for spacing */
-        
+        width: 50%; /* Adjust width for smaller screens */
+        margin: 7px 0; /* Adjust margin for spacing */ 
     }
 }
-
 /* Media Query for Medium Desktops */
 @media (min-width: 768px) {
     .container {
