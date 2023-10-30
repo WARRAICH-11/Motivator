@@ -16,12 +16,31 @@ h4{
 
 audio {
     width: 100%; /* Take the full width of its container */
-    margin: 10px 0; /* Add margin for spacing */
+    margin: 15px 0px; /* Add margin for spacing */
     border: 2px solid #ff5733; /* Add a border with a vibrant color */
-    border-radius: 100px; /* Add rounded corners */
+    border-radius: 0px; /* Add rounded corners */
     padding: 10px; /* Add padding inside the audio element */
     box-shadow: 0 5px 12px red; /* Add a subtle shadow effect */
+	animation:  shadow-animation 10s ease-in-out infinite;
 }
+@keyframes shadow-animation {
+    0% {
+        box-shadow: 0 5px 12px green;
+    }
+	25% {
+        box-shadow: 0 5px 12px red;
+    }
+    50% {
+        box-shadow: 0 5px 20px black; /* Increase the shadow size */
+    }
+	75% {
+        box-shadow: 0 5px 20px green; /* Increase the shadow size */
+    }
+    100% {
+        box-shadow: 0 5px 12px red;
+    }
+}
+
 
 /* Style for the solid header */
 .header {
@@ -123,7 +142,11 @@ audio {
     color: #ff5733; /* Change text color to a different shade on hover */
 }
 
-
+.container2{
+	  height: 300px; /* Set a specific height for the container */
+	  width: 300px; /* Set a specific height for the container */
+	
+}
 
 		
 .container1 {
@@ -228,7 +251,7 @@ li:hover {
 /* Default Styles */
 
 /* Media Query for Small Screens */
-@media (max-width: 767px) {
+@media (max-width: 750px) {
 	
 	.header.minimized .logo-container h2 {
         margin: 5px 0 0 20px;
@@ -263,13 +286,24 @@ li:hover {
 	.container {
         max-width: 160px;
     }
-	 audio {
-        width: 50%; /* Adjust width for smaller screens */
-        margin: 7px 0; /* Adjust margin for spacing */ 
-    }
+	audio {
+    width: 100%; /* Take the full width of its container */
+    margin: 15px 0px; /* Add margin for spacing */
+    border: 2px solid #ff5733; /* Add a border with a vibrant color */
+    border-radius: 0px; /* Add rounded corners */
+    padding: 10px; /* Add padding inside the audio element */
+    box-shadow: 0 5px 12px red; /* Add a subtle shadow effect */
+	animation:  shadow-animation 10s ease-in-out infinite;
+}
+	.container2{
+	  height: 300px; /* Set a specific height for the container */
+	  width: 300px; /* Set a specific height for the container */
+	
+}
+	
 }
 /* Media Query for Medium Desktops */
-@media (min-width: 768px) {
+@media (min-width: 751px) {
     .container {
         max-width: 280px;
     }
