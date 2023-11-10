@@ -4,16 +4,13 @@ body {
     align-items: center;
     height: 200vh;
     margin: 20px;
-   animation:  glow-animation 9s ease-in-out infinite;
     background-image: linear-gradient(to right,#808080,#807070,#803030,#802020,#801010);
     font-family: Garamond, serif;
 	 color: RED;
-    
 }
 h4{
 	opacity : 0.01;
 }
-
 audio {
     width: 100%; /* Take the full width of its container */
     margin: 15px 0px; /* Add margin for spacing */
@@ -21,28 +18,16 @@ audio {
     border-radius: 0px; /* Add rounded corners */
     padding: 10px; /* Add padding inside the audio element */
     box-shadow: 0 5px 12px red; /* Add a subtle shadow effect */
-	animation:  shadow-animation 10s ease-in-out infinite;
+	animation:  shadow-animation 1s ease-in-out infinite;
 }
 @keyframes shadow-animation {
     0% {
-        box-shadow: 0 5px 12px green;
-    }
-	25% {
-        box-shadow: 0 5px 12px red;
-    }
-    50% {
-        box-shadow: 0 5px 20px black; /* Increase the shadow size */
-    }
-	75% {
-        box-shadow: 0 5px 20px green; /* Increase the shadow size */
+        box-shadow: 0 5px 12px RED;
     }
     100% {
-        box-shadow: 0 5px 12px red;
+        box-shadow: 0 5px 12px black;
     }
 }
-
-
-/* Style for the solid header */
 .header {
      background: linear-gradient(to left , black , #808080); 
     color: grey;
@@ -57,20 +42,12 @@ audio {
     align-items: center;
     transition: all 0.9s ease; /* Apply transition to all properties for smooth effect */
 }
-/* Add the typewriting effect to the .discription class */
-/* Add the infinite burst effect to the .discription class */
-
-
-
-
-/* Styles for the minimized header */
 .header.minimized {
     padding: 1px; /* Adjust padding for minimized header */
 	font-size : 10px;
 	
 }
 
-/* Styles for the minimized logo */
 .logo.minimized {
     width: 00px; /* Adjust width for minimized logo */
     height: 00px; /* Adjust height for minimized logo */
@@ -78,14 +55,11 @@ audio {
 	
 }
 
-
-/* Style the logo container */
 .logo-container {
     display: grid;
     align-items: center;
 }
 
-/* Style the logo */
 .logo-container img {
     width: 250px; /* Set the width of the logo */
     height: 320px; /* Set the height of the logo */
@@ -93,15 +67,12 @@ audio {
 	margin-left : 50px;
 }
 
-/* Default styles */
 .logo-container h2 {
     margin: 10px;
 	margin-left: 50px;
     font-size: 50px;
 }
 
-
-/* For modern browsers */
 .gradient-text {
     background-image: linear-gradient(to left, #b7e1cd, #f33131, #96ffb5, black, white);
     -webkit-background-clip: text;
@@ -110,7 +81,6 @@ audio {
     animation: glow-animation 9s ease-in-out infinite; /* Specify the animation duration, timing function, and iteration count */
 }
 
-/* Define the keyframes for the glow animation */
 @keyframes glow-animation {
     0% {
         background-size: 100% 100%; /* Start with fully visible gradient */
@@ -123,21 +93,18 @@ audio {
     }
 }
 
-/* Style the navigation links */
 .nav-links h1 {
     margin: 0 20px; /* Add margin between navigation links */
 	margin-right : 90px;
 	 display: inline; /* Display navigation links horizontally */
 }
 
-/* Style the hyperlinked headings in the header */
 .header h1 a {
     text-decoration: none; /* Remove underline from hyperlinks */
     color: #fff; /* Text color for the hyperlinks */
     transition: color 0.6s ease; /* Smooth transition effect for text color */
 }
 
-/* Change text color on hover for hyperlinks in the header */
 .header h1 a:hover {
     color: #ff5733; /* Change text color to a different shade on hover */
 }
@@ -148,7 +115,6 @@ audio {
 	
 }
 
-		
 .container1 {
     display: flex;
     flex-direction: column; /* Stack items vertically */
@@ -169,8 +135,6 @@ audio {
     background-position: center; 
 	 margin: 30px 10px;
 }
-
-
 .footer {
             background-color: #333;
             color: #fff;
@@ -182,7 +146,6 @@ audio {
 			opacity :  0.5;
         }
 
-        /* Style for the marquee text */
         .marquee-text {
             white-space: nowrap; /* Prevent text from wrapping */
             overflow: hidden; /* Hide overflowing content */
@@ -230,27 +193,20 @@ li:hover {
     background-color: orange; /* Change background color on hover */
 	box-shadow: 5PX 15PX 30px black;
 }
-/* Style the marquee container */
 
-/* Style the marquee text */
 .marquee-text marquee {
     font-family: Garamond, serif; /* Set font family */
 }
 
-/* Style the email link inside the marquee */
 .marquee-text .email-link {
     color: Red; /* Set link color */
     text-decoration: none; /* Remove underline from the link */
 }
 
-/* Change link color on hover */
 .marquee-text .email-link:hover {
     color: GREEN; /* Change link color on hover */
 }
 
-/* Default Styles */
-
-/* Media Query for Small Screens */
 @media (max-width: 750px) {
 	
 	.header.minimized .logo-container h2 {
@@ -302,7 +258,7 @@ li:hover {
 }
 	
 }
-/* Media Query for Medium Desktops */
+
 @media (min-width: 751px) {
     .container {
         max-width: 280px;
@@ -314,7 +270,6 @@ li:hover {
     }
 }
 
-/* Media Query for Large Desktops and Larger Screens */
 @media (min-width: 992px) {
     .container {
         max-width: 800px;
